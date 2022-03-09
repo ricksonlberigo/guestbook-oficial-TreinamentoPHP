@@ -26,6 +26,13 @@
     <div class="container-fluid">
       <h3 class="text-center">Lista de Visitantes.</h3>
 
+      <?= $message = getFlashMessage('delete-visitor'); ?>
+      <?php if ($message) : ?>
+        <div class="alert alert-success" role="alert">
+          <?= $message; ?>
+        </div>
+      <?php endif; ?>
+
       <table class="table mt-5">
         <thead>
           <tr>

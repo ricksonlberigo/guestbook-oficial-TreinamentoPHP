@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . '/../lib/templateHandler.php';
+require_once __DIR__ . '/../lib/flashMessage.php';
 require_once __DIR__ . '/../src/repository/guestbookRepository.php';
 
 $config = parse_ini_file(__DIR__ . '/../config.ini');

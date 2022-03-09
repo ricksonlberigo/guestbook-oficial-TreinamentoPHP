@@ -22,6 +22,13 @@
     </div>
   </div>
 
+  <?= $message = getFlashMessage('edit-visitor'); ?>
+  <?php if ($message) : ?>
+    <div class="alert alert-success" role="alert">
+      <?= $message; ?>
+    </div>
+  <?php endif; ?>
+
   <div class="container mt-5">
     <div class="container-fluid">
       <h3 class="text-center">Editando Visitante <?= $visitor['name']; ?></h3>

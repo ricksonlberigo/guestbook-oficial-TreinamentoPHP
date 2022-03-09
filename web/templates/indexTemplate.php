@@ -25,6 +25,12 @@
   <div class="container mt-5">
     <div class="container-fluid">
       <h3 class="text-center">Assinar livro de visitas.</h3>
+      <?= $message = getFlashMessage('save-visitor'); ?>
+      <?php if ($message) : ?>
+        <div class="alert alert-success" role="alert">
+          <?= $message; ?>
+        </div>
+      <?php endif; ?>
 
       <form class="py-5" method="POST" action="../controller/SaveVisitorControllerWeb.php">
         <div class="mb-3">
